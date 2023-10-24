@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Practice1</string>
+    <string name="hText">You are Healthy!</string>
+    <string name="owText">You are OverWeight!</string>
+    <string name="uwText">You are UnderWeight</string>
+    <string name="feet">Enter your height(feet)</string>
+    <string name="inches">Enter your height(Inches)</string>
+    <string name="weight">Enter you weight</string>
+    <color name="owColor">#F44336</color>
+    <color name="uwColor">#FFEB3B</color>
+    <color name="hColor">#4CAF50</color>
+</resources>

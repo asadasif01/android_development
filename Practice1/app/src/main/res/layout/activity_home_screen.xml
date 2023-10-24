@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A5B1BD">
+
+    <!-- Fixed Toolbar with Background Color -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#3498db"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!-- Button for "Calculate BMI" with Animation -->
+    <Button
+        android:id="@+id/btnCalculateBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate BMI"
+        android:background="#2ecc71"
+        android:padding="16dp"
+        android:stateListAnimator="@null"
+        android:layout_centerInParent="true" />
+
+    <!-- Button for "Recycler View" with Animation -->
+    <Button
+        android:id="@+id/btnRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recycler View"
+        android:background="#e74c3c"
+        android:padding="16dp"
+        android:stateListAnimator="@null"
+        android:layout_below="@id/btnCalculateBMI"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
