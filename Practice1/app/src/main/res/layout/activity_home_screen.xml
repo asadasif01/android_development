@@ -15,6 +15,7 @@
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <!-- Button for "Calculate BMI" with Animation -->
+
     <Button
         android:id="@+id/btnCalculateBMI"
         android:layout_width="wrap_content"
@@ -35,7 +36,43 @@
         android:padding="16dp"
         android:stateListAnimator="@null"
         android:layout_below="@id/btnCalculateBMI"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnroomdb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Room Database"
+        android:background="#e74c3c"
+        android:padding="16dp"
+        android:stateListAnimator="@null"
+        android:layout_below="@id/btnRecyclerView"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnapi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Api"
+        android:background="#e74c3c"
+        android:padding="16dp"
+        android:stateListAnimator="@null"
+        android:layout_above="@id/btnCalculateBMI"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Notification"
+        android:background="#e74c3c"
+        android:padding="16dp"
+        android:stateListAnimator="@null"
+        android:layout_above="@id/btnapi"
+        android:layout_marginBottom="10dp"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

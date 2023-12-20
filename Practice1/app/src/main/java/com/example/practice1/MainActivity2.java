@@ -1,24 +1,23 @@
-package com.example.aftermid;
+package com.example.practice1;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.practice1.Room.UserDatabase;
+import com.example.practice1.Room.UserDao;
+import com.example.practice1.Room.Users;
+
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.aftermid.Room.UserDao;
-import com.example.aftermid.Room.UserDatabase;
-import com.example.aftermid.Room.Users;
-
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements AdapterListner {
-
+public class MainActivity2 extends AppCompatActivity implements AdapterListner{
     EditText nameEd, emailEd;
     Button btn;
     RecyclerView myrecyler;
@@ -31,7 +30,7 @@ public class MainActivity extends AppCompatActivity implements AdapterListner {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main2);
 
         userDatabase = UserDatabase.getInstance(this);
         userDao = userDatabase.getDao();
@@ -63,10 +62,10 @@ public class MainActivity extends AppCompatActivity implements AdapterListner {
                     nameEd.setText("");
                     emailEd.setText("");
                     emailEd.clearFocus();
-                    Toast.makeText(MainActivity.this, "Data Inserted 😊", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity2.this, "Data Inserted 😊", Toast.LENGTH_LONG).show();
                 } else {
                     // Handle the case where userDao or nameEd is null
-                    Toast.makeText(MainActivity.this, "Fill all fields", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity2.this, "Fill all fields", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -93,6 +92,3 @@ public class MainActivity extends AppCompatActivity implements AdapterListner {
         userAdapter.removeUser(pos);
     }
 }
-
-
-

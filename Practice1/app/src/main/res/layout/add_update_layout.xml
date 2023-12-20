@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    android:orientation="vertical"
+    android:background="#3498db">
+
+    <!-- Heading "Add Student" -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Add Student"
+        android:textSize="35sp"
+        android:id="@+id/setroll"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        android:hint="Enter name"
+        android:id="@+id/addname"
+        android:layout_gravity="center"
+        android:textColorHint="@color/black"
+        android:background="#fff"
+        android:textSize="30sp"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        android:hint="Enter rollno"
+            android:id="@+id/addrollno"
+        android:layout_gravity="center"
+        android:textColorHint="@color/black"
+        android:background="#fff"
+        android:textSize="30sp"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Add"
+        android:layout_gravity="center"
+        android:id="@+id/addrecord"
+        android:textSize="18sp"
+        android:background="#2ecc71"
+        android:textColor="@android:color/white" />
+
+    <!-- Button for "Add" -->
+
+</LinearLayout>
